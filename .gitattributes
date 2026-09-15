@@ -1,0 +1,20 @@
+* text=auto eol=lf
+*.sh text eol=lf
+app/backend/mvnw text eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.jar binary
+*.pod binary
+*.drawio binary
+*.mdj binary
+
+ENTREGAS/** -text
+EVIDENCIAS/** -text
