@@ -1,0 +1,10 @@
+{
+  "description": "Manage dental clinic operations with an intuitive dashboard for appointments, patient records, payments, and daily financial reconciliation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
