@@ -1,0 +1,152 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="vN-Qgl08UFV-qZI_7jsD">
+    <mxGraphModel dx="926" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pK3i90XRRozosXtigRDA-4" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;b&gt;INICIO&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="310" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-2" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;b&gt;DF-03 | Registro de abono y cierre de caja diario&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="290" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-6" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Seleccionar paciente y tratamiento activo" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-8" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="pK3i90XRRozosXtigRDA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-9" connectable="0" parent="pK3i90XRRozosXtigRDA-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.3667" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-12" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-13" connectable="0" parent="pK3i90XRRozosXtigRDA-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Si" vertex="1">
+          <mxGeometry relative="1" x="0.0118" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="¿El tratamiento ya tiene valor total registrado?" vertex="1">
+          <mxGeometry height="120" width="150" x="295" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-14" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="450" />
+            </Array>
+            <mxPoint x="370" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ingresar valor total cotizado del tratamiento" vertex="1">
+          <mxGeometry height="60" width="120" x="175" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-20" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ingresar monto del abonoy método de pago" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-21" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Calcular saldo pendiente" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-23" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Registrar abono asociadoal doctor correspondiente" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-26" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-42" connectable="0" parent="pK3i90XRRozosXtigRDA-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Si" vertex="1">
+          <mxGeometry relative="1" x="-0.6147" y="-1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-43" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pK3i90XRRozosXtigRDA-39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="830.06" />
+              <mxPoint x="540" y="1560.06" />
+            </Array>
+            <mxPoint x="480" y="1759.4117647058824" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-44" connectable="0" parent="pK3i90XRRozosXtigRDA-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.9025" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-22" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="¿Es fin de jornada yse hace cierre de caja?" vertex="1">
+          <mxGeometry height="120" width="130" x="305" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-30" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Consolidar abonos del díapor doctor y método de pago" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-33" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mostrar cuadro: &quot;Montoesperado vs. verificado&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-35" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Verificar físicamente efectivoy comprobantes" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-37" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-38" connectable="0" parent="pK3i90XRRozosXtigRDA-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Si" vertex="1">
+          <mxGeometry relative="1" x="-0.45" y="3" as="geometry">
+            <mxPoint x="-3" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-48" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-49" connectable="0" parent="pK3i90XRRozosXtigRDA-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.3455" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="¿Los valorescoinciden?" vertex="1">
+          <mxGeometry height="120" width="120" x="310" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-40" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pK3i90XRRozosXtigRDA-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Generar reporte de cierrede caja" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;b&gt;FIN&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="310" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-50" edge="1" parent="1" source="pK3i90XRRozosXtigRDA-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="pK3i90XRRozosXtigRDA-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pK3i90XRRozosXtigRDA-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Anotar descuadre" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

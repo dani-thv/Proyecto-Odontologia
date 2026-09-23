@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ATF7g2y2bahPPESpmDpq">
+    <mxGraphModel dx="1049" dy="869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-4" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;b&gt;INICIO&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="320" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-2" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;b&gt;DF-02 | Registro de recordatorio y confirmación de cita&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="10" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-7" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;meta charset=&quot;utf-8&quot;&gt;Consultar lista de citas próximas" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-9" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Contactar al paciente" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-11" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-12" connectable="0" parent="3Cr-Vcemz24cKZTyd15t-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Si" vertex="1">
+          <mxGeometry relative="1" x="0.44" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-14" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3Cr-Vcemz24cKZTyd15t-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-15" connectable="0" parent="3Cr-Vcemz24cKZTyd15t-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="0.3714" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-8" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="¿El paciente responde / confirma?" vertex="1">
+          <mxGeometry height="110" width="110" x="325" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-32" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="3Cr-Vcemz24cKZTyd15t-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cambiar estado de cita a: &quot;Confirmada&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-18" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-19" connectable="0" parent="3Cr-Vcemz24cKZTyd15t-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Cancela" vertex="1">
+          <mxGeometry relative="1" x="0.5" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="¿El paciente cancela o no contesta?" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-20" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Registrar estado: &quot;Cancelada&quot; + motivo" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-25" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Agregar paciente a lista de seguimiento" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-35" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Registrar intento fallido de recordatorio" vertex="1">
+          <mxGeometry height="60" width="120" x="325" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-22" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="3Cr-Vcemz24cKZTyd15t-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-23" connectable="0" parent="3Cr-Vcemz24cKZTyd15t-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No contesta" vertex="1">
+          <mxGeometry relative="1" x="0.228" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-27" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-28" connectable="0" parent="3Cr-Vcemz24cKZTyd15t-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="si" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-29" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="3Cr-Vcemz24cKZTyd15t-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-30" connectable="0" parent="3Cr-Vcemz24cKZTyd15t-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2229" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-24" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="¿Se liberó el cupo?" vertex="1">
+          <mxGeometry height="100" width="150" x="95" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;meta charset=&quot;utf-8&quot;&gt;Asignar cupo a paciente en lista de espera" vertex="1">
+          <mxGeometry height="60" width="120" x="110" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;b&gt;FIN&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="325" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-33" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="3Cr-Vcemz24cKZTyd15t-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-36" edge="1" parent="1" source="3Cr-Vcemz24cKZTyd15t-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="3Cr-Vcemz24cKZTyd15t-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Cr-Vcemz24cKZTyd15t-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Agregar paciente a lista de seguimiento" vertex="1">
+          <mxGeometry height="60" width="120" x="325" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
