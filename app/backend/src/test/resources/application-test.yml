@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    # H2 en memoria con sintaxis PostgreSQL: las mismas migraciones de Flyway corren sin tocar nada.
+    url: jdbc:h2:mem:clinica;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""

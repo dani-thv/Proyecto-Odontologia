@@ -1,0 +1,24 @@
+# Opción con Docker:  docker compose -f database/docker-compose.yml up -d
+# Si no usas Docker, mira database/README.md (instalación local con Homebrew).
+services:
+  postgres:
+    image: postgres:16
+    container_name: gracia-osorio-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gracia_osorio
+      POSTGRES_USER: gracia
+      POSTGRES_PASSWORD: gracia
+      TZ: America/Bogota
+    ports:
+      - "127.0.0.1:5432:5432" # solo accesible desde este equipo
+    volumes:
+      - gracia_osorio_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gracia -d gracia_osorio"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  gracia_osorio_data:
