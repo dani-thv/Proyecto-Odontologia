@@ -109,4 +109,80 @@ public final class Dtos {
     public record PaymentDto(String id, LocalDate date, String concept, long amount, PaymentMethod method,
                              String signature) {
     }
+
+    public record ReceiptDto(
+            String receiptNumber,
+            String paymentId,
+            String planId,
+            LocalDate paidOn,
+            String patientId,
+            String patientName,
+            String patientDocument,
+            String patientPhone,
+            String doctorId,
+            String doctorName,
+            String treatmentConcept,
+            String paymentConcept,
+            long amount,
+            String amountFormatted,
+            String amountInWords,
+            PaymentMethod method,
+            String signature,
+            long totalPlanCost,
+            String totalPlanCostFormatted,
+            long previousBalance,
+            String previousBalanceFormatted,
+            long balanceAfterPayment,
+            String balanceAfterPaymentFormatted,
+            String clinicName,
+            String clinicNit,
+            String clinicAddress,
+            String clinicPhone,
+            String whatsappShareUrl) {
+    }
+
+    public record PaymentRequest(
+            /* Si no se envía, se usa la fecha de hoy. */ LocalDate date,
+            @Size(max = 160) String concept,
+            @Positive(message = "El abono debe ser mayor a cero.") long amount,
+            @NotNull(message = "Selecciona el método de pago.") PaymentMethod method,
+            @NotBlank(message = "Registra la firma de conformidad.") @Size(max = 80) String signature) {
+    }
+
+    public record PlanDto(String id, String patientId, String concept, long totalCost, long totalPaid,
+                          long pending, List<PaymentDto> payments) {
+    }
+
+    public record PlanRequest(
+            @NotBlank(message = "Selecciona el paciente.") String patientId,
+            @NotBlank(message = "Escribe el concepto del tratamiento.") @Size(max = 120) String concept,
+            @PositiveOrZero(message = "El costo no puede ser negativo.") long totalCost) {
+    }
+
+    // ── Recordatorios, caja y dashboard ──
+    public record ReminderDto(String id, String appointmentId, ReminderStatus status,
+                             String patientName, String patientPhone, String doctorName,
+                             LocalDate date, String time, String treatment, String whatsappUrl) {
+        public ReminderDto(String id, String appointmentId, ReminderStatus status) {
+            this(id, appointmentId, status, "", "", "", null, "", "", null);
+        }
+    }
+
+    public record CashClosingDto(LocalDate date, long total, List<DoctorAmount> byDoctor,
+                                 List<MethodAmount> byMethod, long expectedCash) {
+    }
+
+    public record DoctorAmount(String doctorId, long amount) {
+    }
+
+    public record MethodAmount(PaymentMethod method, long amount) {
+    }
+
+    public record DashboardSummaryDto(LocalDate today, int appointmentsToday, int urgentToday,
+                                      List<DoctorCount> byDoctor, int tomorrowTotal, int tomorrowConfirmed,
+                                      long toConfirm, long patients) {
+    }
+
+    public record DoctorCount(String doctorId, int count) {
+    }
 }
