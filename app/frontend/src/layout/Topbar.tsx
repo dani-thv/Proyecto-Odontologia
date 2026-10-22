@@ -80,7 +80,7 @@ export default function Topbar({
           onClick={() => navigate("/inicio")}
         >
           <BellIcon size={20} strokeWidth={1.8} />
-          {/* Notificaciones */}
+          {pendingReminders > 0 && <div className="topbar-bell-dot" />}
         </button>
       </div>
     </header>
