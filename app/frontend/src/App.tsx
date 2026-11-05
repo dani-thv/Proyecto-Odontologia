@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { UIEvent } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { AccountProvider, useAccount } from "@/state/AccountContext";
 import { useClinic } from "@/state/ClinicContext";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { DEMO_TODAY } from "@/data/demo";
@@ -15,10 +16,12 @@ import Dashboard from "@/screens/Dashboard";
 import Agenda from "@/screens/agenda";
 import Patients from "@/screens/Patients";
 import Payments from "@/screens/Payments";
+import Login from "@/screens/Login";
 
 const CLINIC = "García & Osorio";
 
-export default function App() {
+function AuthenticatedApp() {
+  const { account, logout } = useAccount();
   const { reminders, status, demoMode } = useClinic();
   const isMobile = useIsMobile();
   const { pathname } = useLocation();
@@ -37,6 +40,12 @@ export default function App() {
     setNavVisible(true);
   }, [title, pathname]);
 
+  // Si no hay usuario autenticado, muestra la pantalla de Login
+  if (!account) {
+    return <Login />;
+  }
+
+  // La barra inferior se oculta al bajar y reaparece al subir.
   const onContentScroll = (e: UIEvent<HTMLElement>) => {
     const y = e.currentTarget.scrollTop;
     const diff = y - lastScrollY.current;
@@ -49,12 +58,14 @@ export default function App() {
 
   return (
     <div id="app-root" className="flex h-dvh w-screen overflow-hidden">
-      <Sidebar />
+      <Sidebar account={account} onLogout={logout} />
 
       <div className="main-area">
         <Topbar
           title={title}
           date={formatLongDate(pathname.startsWith("/pagos") ? toISODate(new Date()) : DEMO_TODAY)}
+          account={account}
+          onLogout={logout}
           pendingReminders={reminders.filter((r) => r.status === "pending").length}
           demoMode={demoMode}
         />
@@ -79,8 +90,16 @@ export default function App() {
         />
       )}
       {isMobile && moreOpen && (
-        <MoreSheet onClose={() => setMoreOpen(false)} />
+        <MoreSheet account={account} onLogout={logout} onClose={() => setMoreOpen(false)} />
       )}
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <AccountProvider>
+      <AuthenticatedApp />
+    </AccountProvider>
   );
 }
