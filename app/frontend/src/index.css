@@ -835,3 +835,93 @@ select.input {
   .bottom-tab-item svg { width: 18px; height: 18px; }
 }
 }
+
+/* ── Print (recibos y cierre de caja) ───────────────────────── */
+#print-root {
+  display: none;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  *, *::before, *::after {
+    box-sizing: border-box !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  body > *:not(#print-root) {
+    display: none !important;
+  }
+
+  #print-root {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    transform: none !important;
+    background: #ffffff !important;
+  }
+
+  .print-doc {
+    width: 210mm !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 15mm !important;
+    margin: 0 auto !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    color: #0f172a !important;
+    background: #ffffff !important;
+    overflow: visible !important;
+  }
+
+  .print-doc table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+  }
+
+  .print-doc th,
+  .print-doc td {
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+    vertical-align: top !important;
+  }
+
+  .print-doc thead {
+    display: table-header-group !important;
+  }
+
+  .print-doc tfoot {
+    display: table-footer-group !important;
+  }
+
+  .print-doc tr,
+  .print-doc .print-avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+/* Accessible focus ring for keyboard users */
+@layer base {
+  :focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+}

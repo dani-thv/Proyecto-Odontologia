@@ -94,7 +94,7 @@ export default function Payments() {
   const [countedCash, setCountedCash] = useState("");
   const [printTarget, setPrintTarget] = useState<PrintTarget | null>(null);
 
-  const closing = useMemo(() => /* daily closing */ dailyClosing(plans, patients, closingDate), [plans, patients, closingDate]);
+  const closing = useMemo(() => dailyClosing(plans, patients, closingDate), [plans, patients, closingDate]);
 
   useEffect(() => {
     const onBeforePrint = () => {
