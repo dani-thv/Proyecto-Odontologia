@@ -12,6 +12,7 @@ class PaymentServiceUnitTest {
     void convertsAmountsToWordsInCOP() {
         assertEquals("Quinientos mil pesos M/CTE", Formats.numberToWordsCOP(500000));
         assertEquals("Un millón de pesos M/CTE", Formats.numberToWordsCOP(1000000));
+        assertEquals("Ochocientos cincuenta mil pesos M/CTE", Formats.numberToWordsCOP(850000));
         assertEquals("Cero pesos M/CTE", Formats.numberToWordsCOP(0));
     }
 
@@ -20,5 +21,8 @@ class PaymentServiceUnitTest {
     void formatsConsecutiveReceiptNumbers() {
         String receiptNumber = "RC-" + String.format("%05d", 1L);
         assertEquals("RC-00001", receiptNumber);
+
+        String receiptNumber105 = "RC-" + String.format("%05d", 105L);
+        assertEquals("RC-00105", receiptNumber105);
     }
 }
