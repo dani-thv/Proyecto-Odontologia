@@ -1,0 +1,467 @@
+REPORTE DE EJECUCION REAL SUREFIRE BACKEND
+Fecha: 2026-11-09 18:36:38 -05:00
+Comando: cd app/backend && .\mvnw.cmd test
+Codigo de salida: 1
+================================================================================
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< co.graciaosorio:clinica-api >---------------------
+[INFO] Building clinica-api 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ clinica-api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ clinica-api ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 41 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ clinica-api ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ clinica-api ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ clinica-api ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running co.graciaosorio.clinica.service.ClinicScheduleTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.180 s -- in co.graciaosorio.clinica.service.ClinicScheduleTest
+[INFO] Running co.graciaosorio.clinica.service.FormatsTest
+[ERROR] Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.038 s <<< FAILURE! -- in co.graciaosorio.clinica.service.FormatsTest
+[ERROR] co.graciaosorio.clinica.service.FormatsTest.generatesWhatsappUrlsWithColombiaCode -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: "https://wa.me/573104528814?text=Hola%20Mar%C3%ADa,%20tu%20cita%20est%C3%A1%20lista."
+ but was: "https://wa.me/573104528814?text=Hola%20Mar%C3%ADa%2C%20tu%20cita%20est%C3%A1%20lista."
+	at co.graciaosorio.clinica.service.FormatsTest.generatesWhatsappUrlsWithColombiaCode(FormatsTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[INFO] Running co.graciaosorio.clinica.web.ApiIntegrationTest
+18:36:57.367 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [co.graciaosorio.clinica.web.ApiIntegrationTest]: ApiIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:36:57.507 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration co.graciaosorio.clinica.ClinicaApplication for test class co.graciaosorio.clinica.web.ApiIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-09T18:36:57.911-05:00  INFO 18784 --- [clinica-api] [           main] c.g.clinica.web.ApiIntegrationTest       : Starting ApiIntegrationTest using Java 25 with PID 18784 (started by <usuario> in <home>\dev\Proyecto-Odontologia-Rebuild\app\backend)
+2026-11-09T18:36:57.911-05:00  INFO 18784 --- [clinica-api] [           main] c.g.clinica.web.ApiIntegrationTest       : The following 1 profile is active: "test"
+2026-11-09T18:36:58.727-05:00  INFO 18784 --- [clinica-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-09T18:36:58.802-05:00  INFO 18784 --- [clinica-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2026-11-09T18:36:59.280-05:00  INFO 18784 --- [clinica-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-09T18:36:59.443-05:00  INFO 18784 --- [clinica-api] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:clinica user=SA
+2026-11-09T18:36:59.445-05:00  INFO 18784 --- [clinica-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-09T18:36:59.481-05:00  INFO 18784 --- [clinica-api] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:clinica (H2 2.3)
+2026-11-09T18:36:59.510-05:00  INFO 18784 --- [clinica-api] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-11-09T18:36:59.512-05:00  INFO 18784 --- [clinica-api] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2026-11-09T18:36:59.518-05:00  INFO 18784 --- [clinica-api] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-11-09T18:36:59.545-05:00  INFO 18784 --- [clinica-api] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-11-09T18:36:59.556-05:00  INFO 18784 --- [clinica-api] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - schema"
+2026-11-09T18:36:59.590-05:00  INFO 18784 --- [clinica-api] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - seed"
+2026-11-09T18:36:59.605-05:00  INFO 18784 --- [clinica-api] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.032s)
+2026-11-09T18:36:59.691-05:00  INFO 18784 --- [clinica-api] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-09T18:36:59.739-05:00  INFO 18784 --- [clinica-api] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-11-09T18:36:59.770-05:00  INFO 18784 --- [clinica-api] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-09T18:37:00.007-05:00  INFO 18784 --- [clinica-api] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-09T18:37:00.066-05:00  INFO 18784 --- [clinica-api] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-09T18:37:00.848-05:00  INFO 18784 --- [clinica-api] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-09T18:37:00.866-05:00  INFO 18784 --- [clinica-api] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-09T18:37:01.120-05:00  INFO 18784 --- [clinica-api] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-09T18:37:02.215-05:00  INFO 18784 --- [clinica-api] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-09T18:37:02.215-05:00  INFO 18784 --- [clinica-api] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-09T18:37:02.221-05:00  INFO 18784 --- [clinica-api] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-09T18:37:02.230-05:00  INFO 18784 --- [clinica-api] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2026-11-09T18:37:02.289-05:00  INFO 18784 --- [clinica-api] [           main] c.g.clinica.web.ApiIntegrationTest       : Started ApiIntegrationTest in 4.663 seconds (process running for 5.74)
+2026-11-09T18:37:02.345-05:00  WARN 18784 --- [clinica-api] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-09T18:37:02.345-05:00  WARN 18784 --- [clinica-api] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-11-09T18:37:04.369-05:00  INFO 18784 --- [clinica-api] [           main] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 361 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/reminders
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.graciaosorio.clinica.web.ReminderController
+           Method = co.graciaosorio.clinica.web.ReminderController#list()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":"1","appointmentId":"17","status":"pending","patientName":"Sof�a Mendoza Arango","patientPhone":"318 776 2200","doctorName":"Dra. Liliana","date":"2026-09-19","time":"09:00","treatment":"Control odontopedi�trico","whatsappUrl":"https://wa.me/573187762200?text=Hola%20*Sof%C3%ADa%20Mendoza%20Arango*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20recordamos%20tu%20cita%20para%20*Control%20odontopedi%C3%A1trico*%20con%20Dra.%20Liliana%20el%20d%C3%ADa%20*2026-09-19*%20a%20las%20*09%3A00*.%20%C2%BFNos%20confirmas%20tu%20asistencia%3F%20%C2%A1Gracias%21"},{"id":"2","appointmentId":"18","status":"pending","patientName":"Ricardo �vila Mej�a","patientPhone":"311 208 4471","doctorName":"Dr. Carlos","date":"2026-09-19","time":"10:30","treatment":"Blanqueamiento","whatsappUrl":"https://wa.me/573112084471?text=Hola%20*Ricardo%20%C3%81vila%20Mej%C3%ADa*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20recordamos%20tu%20cita%20para%20*Blanqueamiento*%20con%20Dr.%20Carlos%20el%20d%C3%ADa%20*2026-09-19*%20a%20las%20*10%3A30*.%20%C2%BFNos%20confirmas%20tu%20asistencia%3F%20%C2%A1Gracias%21"},{"id":"3","appointmentId":"19","status":"pending","patientName":"Camila Torres Ibarra","patientPhone":"319 640 1285","doctorName":"Dra. Liliana","date":"2026-09-19","time":"11:00","treatment":"Fluorizaci�n infantil","whatsappUrl":"https://wa.me/573196401285?text=Hola%20*Camila%20Torres%20Ibarra*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20recordamos%20tu%20cita%20para%20*Fluorizaci%C3%B3n%20infantil*%20con%20Dra.%20Liliana%20el%20d%C3%ADa%20*2026-09-19*%20a%20las%20*11%3A00*.%20%C2%BFNos%20confirmas%20tu%20asistencia%3F%20%C2%A1Gracias%21"},{"id":"4","appointmentId":"20","status":"pending","patientName":"Andr�s Ospina Rueda","patientPhone":"314 502 9096","doctorName":"Dr. Carlos","date":"2026-09-19","time":"13:00","treatment":"Control odontol�gico","whatsappUrl":"https://wa.me/573145029096?text=Hola%20*Andr%C3%A9s%20Ospina%20Rueda*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20recordamos%20tu%20cita%20para%20*Control%20odontol%C3%B3gico*%20con%20Dr.%20Carlos%20el%20d%C3%ADa%20*2026-09-19*%20a%20las%20*13%3A00*.%20%C2%BFNos%20confirmas%20tu%20asistencia%3F%20%C2%A1Gracias%21"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/appointments/pending-reschedule
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.graciaosorio.clinica.web.AppointmentController
+           Method = co.graciaosorio.clinica.web.AppointmentController#pendingReschedule()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":"3","patientId":"15","name":"Juliana Restrepo Ocampo","treatment":"Fluorizaci�n infantil","phone":"304 553 8012","requestedOn":"2026-09-15","whatsappUrl":"https://wa.me/573045538012?text=Hola%20*Juliana%20Restrepo%20Ocampo*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20escribimos%20para%20reagendar%20tu%20cita%20de%20*Fluorizaci%C3%B3n%20infantil*.%20%C2%BFQu%C3%A9%20d%C3%ADa%20y%20horario%20te%20convendr%C3%ADa%3F"},{"id":"1","patientId":"13","name":"Mar�a Fernanda L�pez","treatment":"Endodoncia","phone":"302 771 4410","requestedOn":"2026-09-16","whatsappUrl":"https://wa.me/573027714410?text=Hola%20*Mar%C3%ADa%20Fernanda%20L%C3%B3pez*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20escribimos%20para%20reagendar%20tu%20cita%20de%20*Endodoncia*.%20%C2%BFQu%C3%A9%20d%C3%ADa%20y%20horario%20te%20convendr%C3%ADa%3F"},{"id":"2","patientId":"14","name":"Roberto Casta�o P�rez","treatment":"Control odontol�gico","phone":"305 218 6623","requestedOn":"2026-09-17","whatsappUrl":"https://wa.me/573052186623?text=Hola%20*Roberto%20Casta%C3%B1o%20P%C3%A9rez*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20escribimos%20para%20reagendar%20tu%20cita%20de%20*Control%20odontol%C3%B3gico*.%20%C2%BFQu%C3%A9%20d%C3%ADa%20y%20horario%20te%20convendr%C3%ADa%3F"},{"id":"4","patientId":"16","name":"Esteban Guti�rrez Mora","treatment":"Limpieza","phone":"306 914 2750","requestedOn":"2026-09-18","whatsappUrl":"https://wa.me/573069142750?text=Hola%20*Esteban%20Guti%C3%A9rrez%20Mora*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20escribimos%20para%20reagendar%20tu%20cita%20de%20*Limpieza*.%20%C2%BFQu%C3%A9%20d%C3%ADa%20y%20horario%20te%20convendr%C3%ADa%3F"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/dashboard/summary
+       Parameters = {today=[2026-09-18]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.graciaosorio.clinica.web.ReportController
+           Method = co.graciaosorio.clinica.web.ReportController#summary(LocalDate)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"today":"2026-09-18","appointmentsToday":8,"urgentToday":1,"byDoctor":[{"doctorId":"carlos","count":7},{"doctorId":"liliana","count":1}],"tomorrowTotal":4,"tomorrowConfirmed":0,"toConfirm":6,"patients":16}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/appointments/9/status
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"23"]
+             Body = {"status": "cancelled"}
+    Session Attrs = {}
+
+Handler:
+             Type = co.graciaosorio.clinica.web.AppointmentController
+           Method = co.graciaosorio.clinica.web.AppointmentController#updateStatus(String, StatusRequest)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":"9","patientId":"1","patient":"Andrea Morales G�mez","treatment":"Limpieza","doctorId":"carlos","date":"2026-09-18","startHour":8,"startMin":0,"durationMin":60,"status":"cancelled","patientPhone":"310 452 8814","whatsappUrl":"https://wa.me/573104528814?text=Hola%20*Andrea%20Morales%20G%C3%B3mez*%2C%20te%20recordamos%20tu%20cita%20odontol%C3%B3gica%20en%20Gracia%20%26%20Osorio%20el%20d%C3%ADa%20*2026-09-18*%20a%20las%20*08%3A00*.%20%C2%A1Te%20esperamos%21"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/appointments
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"182"]
+             Body = {"patientId": null, "patient": "Otro", "treatment": "Limpieza", "doctorId": "carlos", "date": "2026-09-18",
+ "startHour": 8, "startMin": 0, "durationMin": 60, "status": "confirmed"}
+
+    Session Attrs = {}
+
+Handler:
+             Type = co.graciaosorio.clinica.web.AppointmentController
+           Method = co.graciaosorio.clinica.web.AppointmentController#create(AppointmentRequest, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = co.graciaosorio.clinica.exception.ApiException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 409
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/problem+json"]
+     Content type = application/problem+json
+             Body = {"type":"about:blank","title":"Conflict","status":409,"detail":"Se cruza con la cita de Luis Felipe Roa Vargas (08:30 � 09:30).","instance":"/api/appointments"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/payments/1/receipt
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.graciaosorio.clinica.web.PaymentController
+           Method = co.graciaosorio.clinica.web.PaymentController#receipt(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"receiptNumber":"RC-00001","paymentId":"1","planId":"1","paidOn":"2026-08-10","patientId":"3","patientName":"Valentina Cruz Salcedo","patientDocument":"1.075.312.445","patientPhone":"300 112 5590","doctorId":"carlos","doctorName":"Dr. Carlos","treatmentConcept":"Extracci�n molar","paymentConcept":"Cuota inicial � Extracci�n molar","amount":200000,"amountFormatted":"$ 200.000","amountInWords":"Doscientos mil pesos M/CTE","method":"Efectivo","signature":"V. Cruz","totalPlanCost":850000,"totalPlanCostFormatted":"$ 850.000","previousBalance":850000,"previousBalanceFormatted":"$ 850.000","balanceAfterPayment":650000,"balanceAfterPaymentFormatted":"$ 650.000","clinicName":"Cl�nica Odontol�gica Gracia & Osorio","clinicNit":"900.543.210-1","clinicAddress":"Calle 10 # 4-25, Consultorio 301, Bogot� D.C.","clinicPhone":"PBX: (601) 745 8899 / WhatsApp: 310 452 8814","whatsappShareUrl":"https://wa.me/573001125590?text=Hola%20*Valentina%20Cruz%20Salcedo*%2C%20te%20compartimos%20el%20soporte%20de%20tu%20pago%20%28RC-00001%29%20por%20valor%20de%20*%24%20200.000*%20para%20tu%20tratamiento%20de%20*Extracci%C3%B3n%20molar*%20en%20Gracia%20%26%20Osorio.%20Saldo%20pendiente%3A%20*%24%20650.000*.%20%C2%A1Muchas%20gracias%21"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[ERROR] Tests run: 32, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 7.503 s <<< FAILURE! -- in co.graciaosorio.clinica.web.ApiIntegrationTest
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.includesWhatsappUrlInRemindersAndPending -- Time elapsed: 0.028 s <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$[0].whatsappUrl"
+Expected: a string containing "https://wa.me/573027714410"
+     but: was "https://wa.me/573045538012?text=Hola%20*Juliana%20Restrepo%20Ocampo*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20escribimos%20para%20reagendar%20tu%20cita%20de%20*Fluorizaci%C3%B3n%20infantil*.%20%C2%BFQu%C3%A9%20d%C3%ADa%20y%20horario%20te%20convendr%C3%ADa%3F"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:107)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:88)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at co.graciaosorio.clinica.web.ApiIntegrationTest.includesWhatsappUrlInRemindersAndPending(ApiIntegrationTest.java:159)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.summarizesTheDashboard -- Time elapsed: 0.023 s <<< FAILURE!
+java.lang.AssertionError: 
+JSON path "$.byDoctor[?(@.doctorId=='carlos')].count"
+Expected: iterable containing [<6>]
+     but: item 0: was <7>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:107)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:88)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at co.graciaosorio.clinica.web.ApiIntegrationTest.summarizesTheDashboard(ApiIntegrationTest.java:455)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.changesStatusAndChecksConflictWhenReactivating -- Time elapsed: 0.018 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<409>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at co.graciaosorio.clinica.web.ApiIntegrationTest.changesStatusAndChecksConflictWhenReactivating(ApiIntegrationTest.java:337)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.generatesReceiptJsonAndHtml -- Time elapsed: 0.016 s <<< ERROR!
+jakarta.servlet.ServletException: Request processing failed: java.util.UnknownFormatConversionException: Conversion = ';'
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at co.graciaosorio.clinica.web.ApiIntegrationTest.generatesReceiptJsonAndHtml(ApiIntegrationTest.java:142)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.util.UnknownFormatConversionException: Conversion = ';'
+	at java.base/java.util.Formatter.parse(Formatter.java:2818)
+	at java.base/java.util.Formatter.format(Formatter.java:2744)
+	at java.base/java.util.Formatter.format(Formatter.java:2698)
+	at java.base/java.lang.String.formatted(String.java:4517)
+	at co.graciaosorio.clinica.service.PaymentService.getReceiptHtml(PaymentService.java:280)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at co.graciaosorio.clinica.service.PaymentService$$SpringCGLIB$$0.getReceiptHtml(<generated>)
+	at co.graciaosorio.clinica.web.PaymentController.receiptHtml(PaymentController.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	... 28 more
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   FormatsTest.generatesWhatsappUrlsWithColombiaCode:43 
+expected: "https://wa.me/573104528814?text=Hola%20Mar%C3%ADa,%20tu%20cita%20est%C3%A1%20lista."
+ but was: "https://wa.me/573104528814?text=Hola%20Mar%C3%ADa%2C%20tu%20cita%20est%C3%A1%20lista."
+[ERROR]   ApiIntegrationTest.changesStatusAndChecksConflictWhenReactivating:337 Status expected:<201> but was:<409>
+[ERROR]   ApiIntegrationTest.includesWhatsappUrlInRemindersAndPending:159 JSON path "$[0].whatsappUrl"
+Expected: a string containing "https://wa.me/573027714410"
+     but: was "https://wa.me/573045538012?text=Hola%20*Juliana%20Restrepo%20Ocampo*%2C%20te%20saludamos%20de%20la%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Gracia%20%26%20Osorio.%20Te%20escribimos%20para%20reagendar%20tu%20cita%20de%20*Fluorizaci%C3%B3n%20infantil*.%20%C2%BFQu%C3%A9%20d%C3%ADa%20y%20horario%20te%20convendr%C3%ADa%3F"
+[ERROR]   ApiIntegrationTest.summarizesTheDashboard:455 JSON path "$.byDoctor[?(@.doctorId=='carlos')].count"
+Expected: iterable containing [<6>]
+     but: item 0: was <7>
+[ERROR] Errors: 
+[ERROR]   ApiIntegrationTest.generatesReceiptJsonAndHtml:142 � Servlet Request processing failed: java.util.UnknownFormatConversionException: Conversion = ';'
+[INFO] 
+[ERROR] Tests run: 45, Failures: 4, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.162 s
+[INFO] Finished at: 2026-11-09T18:37:04-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project clinica-api: There are test failures.
+[ERROR] 
+[ERROR] See <home>\dev\Proyecto-Odontologia-Rebuild\app\backend\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (<home>\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
