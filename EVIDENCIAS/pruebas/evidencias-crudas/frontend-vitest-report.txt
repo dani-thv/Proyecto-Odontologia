@@ -1,0 +1,515 @@
+REPORTE DE EJECUCION REAL VITEST FRONTEND
+Fecha: 2026-11-09 18:36:38 -05:00
+Comando: cd app/frontend && npx vitest run
+Codigo de salida: 1
+================================================================================
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.4 [39m[90m<home>/dev/Proyecto-Odontologia-Rebuild/app/frontend[39m
+
+ [32m✓[39m src/utils/format.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 37[2mms[22m[39m
+ [32m✓[39m src/utils/dates.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 33[2mms[22m[39m
+ [32m✓[39m src/api/localRepository.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 25[2mms[22m[39m
+ [32m✓[39m src/screens/Dashboard.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 717[2mms[22m[39m
+   [32m✓[39m Dashboard [2m(3)[22m
+     [33m[2m✓[22m[39m calcula las cifras desde las citas (sin números fijos)[33m 382[2mms[22m[39m
+ [32m✓[39m src/components/ConnectionScreen.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 834[2mms[22m[39m
+   [32m✓[39m ConnectionScreen [2m(3)[22m
+     [33m[2m✓[22m[39m muestra 'cargando' y luego la app cuando el servidor responde[33m 478[2mms[22m[39m
+ [32m✓[39m src/components/Modal.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 1492[2mms[22m[39m
+   [32m✓[39m Modal [2m(4)[22m
+     [33m[2m✓[22m[39m expone role=dialog con título accesible y foco inicial dentro[33m 305[2mms[22m[39m
+     [33m[2m✓[22m[39m atrapa el foco con Tab y Shift+Tab[33m 940[2mms[22m[39m
+ [32m✓[39m src/utils/finance.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 25[2mms[22m[39m
+ [32m✓[39m src/api/apiRepository.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 26[2mms[22m[39m
+ [32m✓[39m src/utils/schedule.test.ts [2m([22m[2m12 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [31m❯[39m src/screens/Payments.test.tsx [2m([22m[2m5 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[33m 1793[2mms[22m[39m
+   [31m❯[39m Payments [2m(5)[22m
+     [33m[2m✓[22m[39m muestra el resumen de la primera cuenta (Valentina)[33m 349[2mms[22m[39m
+     [33m[2m✓[22m[39m registra un abono y actualiza saldo, historial y progreso[33m 723[2mms[22m[39m
+     [33m[2m✓[22m[39m no permite abonar más que el saldo ni dejar la firma vacía[33m 343[2mms[22m[39m
+[31m     [31m×[31m calcula el cierre de caja del día y la diferencia de efectivo[39m[32m 287[2mms[22m[39m
+     [32m✓[39m cambia de paciente con el selector[32m 87[2mms[22m[39m
+ [31m❯[39m src/App.test.tsx [2m([22m[2m6 tests[22m[2m | [22m[31m3 failed[39m[2m)[22m[33m 2071[2mms[22m[39m
+   [31m❯[39m App [2m(6)[22m
+[31m     [31m×[31m redirige / a la agenda y marca la navegación activa[39m[33m 553[2mms[22m[39m
+[31m     [31m×[31m navega entre pantallas por URL y por el menú[39m[33m 341[2mms[22m[39m
+     [33m[2m✓[22m[39m las citas creadas persisten al cambiar de pantalla[33m 951[2mms[22m[39m
+     [32m✓[39m el botón Nueva cita del dashboard abre el formulario en la agenda[32m 117[2mms[22m[39m
+[31m     [31m×[31m permite cerrar sesión y volver a la pantalla de login[39m[32m 56[2mms[22m[39m
+     [32m✓[39m en móvil usa la barra inferior[32m 49[2mms[22m[39m
+ [32m✓[39m src/screens/Patients.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 2627[2mms[22m[39m
+   [32m✓[39m Patients [2m(5)[22m
+     [33m[2m✓[22m[39m lista los pacientes y los cuenta por saldo (derivado de los pagos)[33m 462[2mms[22m[39m
+     [33m[2m✓[22m[39m filtra por búsqueda de nombre o cédula[33m 650[2mms[22m[39m
+     [33m[2m✓[22m[39m registra un paciente nuevo y valida cédula duplicada[33m 1185[2mms[22m[39m
+ [32m✓[39m src/screens/ServerErrors.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 2771[2mms[22m[39m
+   [32m✓[39m errores del servidor en pantalla [2m(4)[22m
+     [33m[2m✓[22m[39m cédula repetida (409) se muestra en el campo y el formulario sigue abierto[33m 1272[2mms[22m[39m
+     [33m[2m✓[22m[39m cruce de horario (409) del servidor se muestra en el formulario de la cita[33m 605[2mms[22m[39m
+     [33m[2m✓[22m[39m servidor caído al guardar (status 0) deja el formulario abierto con aviso[33m 452[2mms[22m[39m
+     [33m[2m✓[22m[39m abono rechazado (422) se muestra en el campo del valor[33m 439[2mms[22m[39m
+ [32m✓[39m src/screens/agenda/Agenda.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[33m 3445[2mms[22m[39m
+   [32m✓[39m Agenda (escritorio) [2m(8)[22m
+     [33m[2m✓[22m[39m muestra la semana de la demo y las citas del doctor activo[33m 599[2mms[22m[39m
+     [33m[2m✓[22m[39m navega entre semanas y vuelve con Hoy[33m 537[2mms[22m[39m
+     [33m[2m✓[22m[39m crea una cita válida[33m 698[2mms[22m[39m
+     [33m[2m✓[22m[39m rechaza una cita que se cruza con otra del mismo doctor[33m 592[2mms[22m[39m
+     [33m[2m✓[22m[39m reagenda un paciente pendiente y lo saca de la lista[33m 323[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m12 passed[39m[22m[90m (14)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m75 passed[39m[22m[90m (79)[39m
+[2m   Start at [22m 18:36:39
+[2m   Duration [22m 6.49s[2m (environment 44%, tests 32%, setup 12%, transform 8%, import 4%)[22m
+
+[2mEnvironment [22m [33mjsdom was created 14 times[39m[2m · 21.57s total, 44% of tracked time[22m
+[2m            [22m [2mcreate it once per worker with [22m[33mpool: 'vmThreads'[39m[2m (keeps per-file isolation) or [22m[33misolate: false[39m[2m (shares it across files)[22m
+[2m            [22m [2mlearn more: https://vitest.dev/guide/improving-performance#test-environments[22m
+
+
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 4 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mApp[2m > [22mredirige / a la agenda y marca la navegación activa
+[31m[1mAssertionError[22m: expected 'Agenda · García & Osorio' to be 'Agenda · García Osorio' // Object.is equality[39m
+
+Expected: [32m"Agenda · García Osorio"[39m
+Received: [31m"Agenda · García[7m &[27m Osorio"[39m
+
+[36m [2m❯[22m src/App.test.tsx:[2m13:28[22m[39m
+    [90m 11|[39m     expect(screen.getByRole("heading", { level: 1, name: "Agenda" })).…
+    [90m 12|[39m     expect(screen.getByRole("link", { name: "Agenda" })).toHaveAttribu…
+    [90m 13|[39m     expect(document.title).toBe("Agenda · García Osorio");
+    [90m   |[39m                            [31m^[39m
+    [90m 14|[39m   });
+    [90m 15|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mApp[2m > [22mnavega entre pantallas por URL y por el menú
+[31m[1mAssertionError[22m: expected 'Pagos · García & Osorio' to be 'Pagos · García Osorio' // Object.is equality[39m
+
+Expected: [32m"Pagos · García Osorio"[39m
+Received: [31m"Pagos · García[7m &[27m Osorio"[39m
+
+[36m [2m❯[22m src/App.test.tsx:[2m24:28[22m[39m
+    [90m 22|[39m     await user.click(screen.getByRole("link", { name: "Pagos" }));
+    [90m 23|[39m     expect(screen.getByRole("heading", { level: 1, name: "Pagos" })).t…
+    [90m 24|[39m     expect(document.title).toBe("Pagos · García Osorio");
+    [90m   |[39m                            [31m^[39m
+    [90m 25|[39m   });
+    [90m 26|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mApp[2m > [22mpermite cerrar sesión y volver a la pantalla de login
+[31m[1mTestingLibraryElementError[22m[39m: Found multiple elements with the text: Merlin
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<div[39m
+  [33mclass[39m=[32m"truncate text-xs font-bold text-white"[39m
+[36m>[39m
+  [0mMerlin[0m
+[36m</div>[39m
+
+Ignored nodes: comments, script, style
+[36m<span[39m
+  [33mclass[39m=[32m"account-name font-bold text-slate-800"[39m
+[36m>[39m
+  [0mMerlin[0m
+[36m</span>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"flex h-dvh w-screen overflow-hidden"[39m
+      [33mid[39m=[32m"app-root"[39m
+    [36m>[39m
+      [36m<aside[39m
+        [33mclass[39m=[32m"sidebar"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"sidebar-logo"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"sidebar-logo-icon"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mheight[39m=[32m"18"[39m
+              [33mstroke[39m=[32m"white"[39m
+              [33mstroke-width[39m=[32m"1.8"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"18"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M12 2C8.5 2 6 4.5 6 7c0 2 1 3.5 1 5 0 2-1 4-1 6s1 3 2 3 2-1.5 2-3c0-1 .5-2 2-2s2 1 2 2c0 1.5 1 3 2 3s2-1 2-3-1-4-1-6c0-1.5 1-3 1-5 0-2.5-2.5-5-6-5z"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"sidebar-clinic"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sidebar-clinic-name"[39m
+            [36m>[39m
+              [0mGarcía Osorio[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sidebar-clinic-sub"[39m
+            [36m>[39m
+              [0mClínica Odontológica[0m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Navegación principal"[39m
+          [33mclass[39m=[32m"sidebar-nav"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33mclass[39m=[32m"nav-item"[39m
+            [33mdata-discover[39m=[32m"true"[39m
+            [33mhref[39m=[32m"/inicio"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"[39m
+              [36m/>[39m
+              [36m<polyline[39m
+                [33mpoints[39m=[32m"9 22 9 12 15 12 15 22"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mInicio[0m
+          [36m</a>[39m
+          [36m<a[39m
+            [33maria-current[39m=[32m"page"[39m
+            [33mclass[39m=[32m"nav-item active"[39m
+            [33mdata-discover[39m=[32m"true"[39m
+            [33mhref[39m=[32m"/agenda"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+            [36m>[39m
+              [36m<rect[39m
+                [33mheight[39m=[32m"18"[39m
+                [33mrx[39m=[32m"2"[39m
+                [33mwidth[39m=[32m"18"[39m
+                [33mx[39m=[32m"3"[39m
+                [33my[39m=[32m"4"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 2v4M8 2v4M3 10h18"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mAgenda[0m
+          [36m</a>[39m
+          [36m<a[39m
+            [33mclass[39m=[32m"nav-item"[39m
+            [33mdata-discover[39m=[32m"true"[39m
+            [33mhref[39m=[32m"/pacientes"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"9"[39m
+                [33mcy[39m=[32m"7"[39m
+                [33mr[39m=[32m"4"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mPacientes[0m
+          [36m</a>[39m
+          [36m<a[39m
+            [33mclass[39m=[32m"nav-item"[39m
+            [33mdata-discover[39m=[32m"true"[39m
+            [33mhref[39m=[32m"/pagos"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mheight[39m=[32m"16"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"16"[39m
+            [36m>[39m
+              [36m<rect[39m
+                [33mheight[39m=[32m"14"[39m
+                [33mrx[39m=[32m"2"[39m
+                [33mwidth[39m=[32m"20"[39m
+                [33mx[39m=[32m"2"[39m
+                [33my[39m=[32m"5"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M2 10h20"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mPagos[0m
+          [36m</a>[39m
+        [36m</nav>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"border-t border-white/10 p-3"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-2 flex items-center gap-2.5 px-2 py-1.5 text-white"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sidebar-avatar shrink-0 font-bold"[39m
+            [36m>[39m
+              [0mM[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"min-w-0 flex-1"[39m
+            [36m>[39m
+              [36m<div[39m
+           ...
+[90m [2m❯[22m Object.getElementError ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m getElementError ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m20:35[22m[39m
+[90m [2m❯[22m getMultipleElementsFoundError ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m23:10[22m[39m
+[90m [2m❯[22m ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m55:13[22m[39m
+[90m [2m❯[22m ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/App.test.tsx:[2m50:19[22m[39m
+    [90m 48|[39m     const user = userEvent.setup();
+    [90m 49|[39m     renderApp(<App />, { route: "/agenda" });
+    [90m 50|[39m     expect(screen.getByText("Merlin")).toBeInTheDocument();
+    [90m   |[39m                   [31m^[39m
+    [90m 51|[39m     await user.click(screen.getByRole("button", { name: "Cerrar sesión…
+    [90m 52|[39m     expect(screen.getByRole("button", { name: "Iniciar sesión" })).toB…
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m src/screens/Payments.test.tsx[2m > [22mPayments[2m > [22mcalcula el cierre de caja del día y la diferencia de efectivo
+[31m[1mTestingLibraryElementError[22m[39m: Unable to find an element with the text: Debería haber. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"fade-in flex w-full flex-col gap-4 mobile:gap-3 mobile:pb-6"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33maria-label[39m=[32m"Resumen de cuenta"[39m
+        [33mclass[39m=[32m"card card-shadow px-[22px] py-[18px] mobile:px-4 mobile:py-3.5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"mb-3.5 flex items-end gap-3"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"flex-1"[39m
+          [36m>[39m
+            [36m<label[39m
+              [33mclass[39m=[32m"mb-1 block text-[11.5px] font-bold uppercase tracking-wide text-slate-500"[39m
+              [33mfor[39m=[32m"pay-patient"[39m
+            [36m>[39m
+              [0mSeleccionar paciente[0m
+            [36m</label>[39m
+            [36m<select[39m
+              [33mclass[39m=[32m"input w-full border-slate-300 bg-white text-sm font-semibold mobile:text-[13px]"[39m
+              [33mid[39m=[32m"pay-patient"[39m
+            [36m>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-01"[39m
+              [36m>[39m
+                [0mValentina Cruz Salcedo[0m
+                [0m – [0m
+                [0m1.075.312.445[0m
+                [0m · [0m
+                [0mExtracción molar[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-02"[39m
+              [36m>[39m
+                [0mLuis Felipe Roa Vargas[0m
+                [0m – [0m
+                [0m1.019.874.332[0m
+                [0m · [0m
+                [0mEndodoncia premolar[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-03"[39m
+              [36m>[39m
+                [0mAndrea Morales Gómez[0m
+                [0m – [0m
+                [0m1.032.458.771[0m
+                [0m · [0m
+                [0mLimpieza[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-04"[39m
+              [36m>[39m
+                [0mCarolina Pinto Londoño[0m
+                [0m – [0m
+                [0m1.094.562.881[0m
+                [0m · [0m
+                [0mOdontopediatría[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-05"[39m
+              [36m>[39m
+                [0mJorge Sánchez Duque[0m
+                [0m – [0m
+                [0m79.654.321[0m
+                [0m · [0m
+                [0mEndodoncia[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-06"[39m
+              [36m>[39m
+                [0mDaniel Vargas Peñaranda[0m
+                [0m – [0m
+                [0m1.022.334.556[0m
+                [0m · [0m
+                [0mResina[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-07"[39m
+              [36m>[39m
+                [0mMateo Herrera Ríos[0m
+                [0m – [0m
+                [0m1.000.987.213[0m
+                [0m · [0m
+                [0mResina estética[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-08"[39m
+              [36m>[39m
+                [0mRicardo Ávila Mejía[0m
+                [0m – [0m
+                [0m1.017.554.309[0m
+                [0m · [0m
+                [0mBlanqueamiento[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-09"[39m
+              [36m>[39m
+                [0mCamila Torres Ibarra[0m
+                [0m – [0m
+                [0m1.053.771.208[0m
+                [0m · [0m
+                [0mFluorización y profilaxis[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-10"[39m
+              [36m>[39m
+                [0mSofía Mendoza Arango[0m
+                [0m – [0m
+                [0m1.001.234.876[0m
+                [0m · [0m
+                [0mOdontopediatría preventiva[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"plan-11"[39m
+              [36m>[39m
+                [0mIsabela Romero Castillo[0m
+                [0m – [0m
+                [0m1.030.987.654[0m
+                [0m · [0m
+                [0mRevisión general[0m
+              [36m</option>[39m
+            [36m</select>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn-orange shrink-0"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mheight[39m=[32m"13"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-width[39m=[32m"2.5"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"13"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M12 5v14M5 12h14"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0m Registrar abono[0m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"mb-3.5 grid grid-cols-3 gap-4 mobile:gap-2"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"rounded-lg border px-4 py-3 mobile:px-2.5 mobile:py-2 border-slate-200 bg-slate-50 text-brand [&_p:first-child]:text-slate-500"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold mobile:text-[10.5px]"[39m
+            [36m>[39m
+              [0mCosto total[0m
+            [36m</p>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mt-0.5 text-[22px] font-extrabold mobile:text-[15px]"[39m
+            [36m>[39m
+              [0m$ 850.000[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"rounded-lg border px-4 py-3 mobile:px-2.5 mobile:py-2 border-green-200 bg-green-50 text-green-600 [&_p:first-child]:text-green-700"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"text-xs font-semibold mobile:text-[10.5px]"[39m
+            [36m>[39m
+              [0mAbonado[0m
+            [36m</p>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mt-0.5 text-[22px] font-extrabold mobile:text-[15px]"[39m
+            [36m>[39m
+              [0m$ 500.000[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [...
+[90m [2m❯[22m Object.getElementError ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m ../../../Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/screens/Payments.test.tsx:[2m55:19[22m[39m
+    [90m 53|[39m     await user.type(dateInput, "2026-09-18");
+    [90m 54|[39m
+    [90m 55|[39m     expect(screen.getByText("Debería haber").nextElementSibling).toHav…
+    [90m   |[39m                   [31m^[39m
+    [90m 56|[39m     expect(screen.queryByText("Diferencia")).not.toBeInTheDocument();
+    [90m 57|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯[22m[39m
+

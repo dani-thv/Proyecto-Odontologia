@@ -1,0 +1,8 @@
+REPORTE DE VERIFICACION DE TIPOS TYPESCRIPT (tsc --noEmit)
+Fecha: 2026-11-09 18:36:38 -05:00
+Comando: cd app/frontend && npx tsc --noEmit
+Codigo de salida: 2
+================================================================================
+
+src/screens/Dashboard.tsx(82,36): error TS2339: Property 'name' does not exist on type 'AccountContextValue'.
+
