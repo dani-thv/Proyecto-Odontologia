@@ -1,0 +1,98 @@
+================================================================================
+REPORTE DE EJECUCION DE PRUEBAS POR VERSION (TAGS DEL REPOSITORIO)
+Fecha real de ejecucion: 2026-11-09 18:27:12 -05:00
+Entorno: Windows 11 Pro / Java 25 / Node 22 / Vitest 5.0.4 / Maven Surefire 3.5.6
+================================================================================
+
+--------------------------------------------------------------------------------
+VERSION / TAG: v0.2
+--------------------------------------------------------------------------------
+[FRONTEND - vitest run] Codigo de salida: 1
+ [31m❯[39m src/utils/schedule.test.ts [2m([22m[2m0 test[22m[2m)[22m
+ [32m✓[39m src/utils/dates.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 21[2mms[22m[39m
+ [32m✓[39m src/components/Modal.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 1107[2mms[22m[39m
+   [32m✓[39m Modal [2m(4)[22m
+     [33m[2m✓[22m[39m atrapa el foco con Tab y Shift+Tab[33m 758[2mms[22m[39m
+[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[32m9 passed[39m[22m[90m (9)[39m
+[2m   Duration [22m 2.46s[2m (environment 55%, tests 25%, setup 17%, import 2%, transform 1%, worker 1%)[22m
+[41m[1m FAIL [22m[49m src/utils/schedule.test.ts[2m [ src/utils/schedule.test.ts ][22m
+[90m [2m❯[22m TransformPluginContext._formatLog ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8393:39[22m[39m
+[90m [2m❯[22m TransformPluginContext.error ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8390:14[22m[39m
+[90m [2m❯[22m normalizeUrl ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26058:18[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26128:30[22m[39m
+[90m [2m❯[22m TransformPluginContext.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26094:4[22m[39m
+[90m [2m❯[22m EnvironmentPluginContainer.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8172:14[22m[39m
+[90m [2m❯[22m loadAndTransform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m19634:26[22m[39m
+
+[BACKEND] No disponible en esta version (arquitectura inicial solo frontend en memoria).
+
+--------------------------------------------------------------------------------
+VERSION / TAG: v0.3
+--------------------------------------------------------------------------------
+[FRONTEND - vitest run] Codigo de salida: 1
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26128:30[22m[39m
+[90m [2m❯[22m TransformPluginContext.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26094:4[22m[39m
+[90m [2m❯[22m EnvironmentPluginContainer.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8172:14[22m[39m
+[90m [2m❯[22m loadAndTransform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m19634:26[22m[39m
+[41m[1m FAIL [22m[49m src/utils/format.test.ts[2m [ src/utils/format.test.ts ][22m
+[90m [2m❯[22m TransformPluginContext._formatLog ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8393:39[22m[39m
+[90m [2m❯[22m TransformPluginContext.error ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8390:14[22m[39m
+[90m [2m❯[22m normalizeUrl ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26058:18[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26128:30[22m[39m
+[90m [2m❯[22m TransformPluginContext.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26094:4[22m[39m
+[90m [2m❯[22m EnvironmentPluginContainer.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8172:14[22m[39m
+[90m [2m❯[22m loadAndTransform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m19634:26[22m[39m
+[41m[1m FAIL [22m[49m src/utils/schedule.test.ts[2m [ src/utils/schedule.test.ts ][22m
+[90m [2m❯[22m TransformPluginContext._formatLog ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8393:39[22m[39m
+[90m [2m❯[22m TransformPluginContext.error ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8390:14[22m[39m
+[90m [2m❯[22m normalizeUrl ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26058:18[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26128:30[22m[39m
+[90m [2m❯[22m TransformPluginContext.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m26094:4[22m[39m
+[90m [2m❯[22m EnvironmentPluginContainer.transform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m8172:14[22m[39m
+[90m [2m❯[22m loadAndTransform ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/vite@8.3.0_@types+node@22.20.3_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:[2m19634:26[22m[39m
+
+[BACKEND - mvnw test] Codigo de salida: 1
+[INFO] BUILD FAILURE
+[INFO] Total time:  3.320 s
+[INFO] Finished at: 2026-11-09T18:27:28-05:00
+
+--------------------------------------------------------------------------------
+VERSION / TAG: v1.0
+--------------------------------------------------------------------------------
+[FRONTEND - vitest run] Codigo de salida: 1
+[2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m75 passed[39m[22m[90m (79)[39m
+[2m   Duration [22m 8.30s[2m (environment 46%, tests 34%, setup 12%, import 4%, transform 4%, worker 1%)[22m
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 4 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mApp[2m > [22mredirige / a la agenda y marca la navegación activa
+[36m [2m❯[22m src/App.test.tsx:[2m13:28[22m[39m
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mApp[2m > [22mnavega entre pantallas por URL y por el menú
+[36m [2m❯[22m src/App.test.tsx:[2m24:28[22m[39m
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mApp[2m > [22mpermite cerrar sesión y volver a la pantalla de login
+[90m [2m❯[22m Object.getElementError ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m getElementError ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m20:35[22m[39m
+[90m [2m❯[22m getMultipleElementsFoundError ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m23:10[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m55:13[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/App.test.tsx:[2m50:19[22m[39m
+[41m[1m FAIL [22m[49m src/screens/Payments.test.tsx[2m > [22mPayments[2m > [22mcalcula el cierre de caja del día y la diferencia de efectivo
+[90m [2m❯[22m Object.getElementError ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/config.js:[2m37:19[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m76:38[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m52:17[22m[39m
+[90m [2m❯[22m ../../../../../../dev/Proyecto-Odontologia/app/frontend/node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:[2m95:19[22m[39m
+[36m [2m❯[22m src/screens/Payments.test.tsx:[2m55:19[22m[39m
+
+[BACKEND - mvnw test] Codigo de salida: 1
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s -- in co.graciaosorio.clinica.service.ClinicScheduleTest
+[ERROR] Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.039 s <<< FAILURE! -- in co.graciaosorio.clinica.service.FormatsTest
+[ERROR] co.graciaosorio.clinica.service.FormatsTest.generatesWhatsappUrlsWithColombiaCode -- Time elapsed: 0.014 s <<< FAILURE!
+[ERROR] Tests run: 32, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 8.911 s <<< FAILURE! -- in co.graciaosorio.clinica.web.ApiIntegrationTest
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.includesWhatsappUrlInRemindersAndPending -- Time elapsed: 0.020 s <<< FAILURE!
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.summarizesTheDashboard -- Time elapsed: 0.031 s <<< FAILURE!
+[ERROR] co.graciaosorio.clinica.web.ApiIntegrationTest.changesStatusAndChecksConflictWhenReactivating -- Time elapsed: 0.020 s <<< FAILURE!
+[ERROR] Failures: 
+[ERROR] Errors: 
+[ERROR] Tests run: 45, Failures: 4, Errors: 1, Skipped: 0
+[INFO] BUILD FAILURE
+[INFO] Total time:  19.758 s
+[INFO] Finished at: 2026-11-09T18:28:01-05:00
