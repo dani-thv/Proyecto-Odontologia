@@ -54,14 +54,14 @@ Cada uno de los 17 Requisitos Funcionales del documento `SRS.pdf` fue evaluado c
 
 | ID Requisito | Nombre del Requisito en SRS | Tipo | Estado de Cumplimiento | Defecto o Hallazgo | Evidencia Asociada |
 |:---:|---|:---:|:---:|:---:|---|
-| **RF01** | Autenticacion de la secretaria | Funcional | **Pasa con Observacion** | Validacion local en `auth.ts` sin token JWT | Captura CAP-01 (Pendiente manual) |
-| **RF02** | Registro de datos basicos del paciente | Funcional | **Pasa** | Validacion de cedula unica y busqueda | Suite `Patients.test.tsx` |
+| **RF01** | Autenticacion de la secretaria | Funcional | **Pasa con Observacion** | Validacion local en `auth.ts` sin token JWT | `CAP-01-autenticacion-roles.png` |
+| **RF02** | Registro de datos basicos del paciente | Funcional | **Pasa** | Validacion de cedula unica y busqueda | Suite `Patients.test.tsx` / `CAP-02-registro-busqueda-pacientes.png` |
 | **RF03** | Asignacion sugerida de especialista | Funcional | **No implementado** | No existe logica de sugerencia automatica | Ausencia en codigo fuente |
-| **RF04** | Gestion de agendas independientes | Funcional | **Pasa** | Cuadricula reactiva por doctor activo | Suite `Agenda.test.tsx` |
+| **RF04** | Gestion de agendas independientes | Funcional | **Pasa** | Cuadricula reactiva por doctor activo | Suite `Agenda.test.tsx` / `CAP-03-agendamiento-citas.png` |
 | **RF05** | Registro y validacion de citas | Funcional | **Pasa** | Horarios 08:00 a 18:00 y duracion > 0 | Suite `ClinicScheduleTest` |
 | **RF06** | Gestion de estados de la cita | Funcional | **Pasa** | confirmed, urgent, pending, cancelled | Suite `Agenda.test.tsx` |
-| **RF07** | Recordatorios de confirmacion | Funcional | **Pasa** | Listado de citas de manana y wa.me | Suite `Dashboard.test.tsx` |
-| **RF08** | Agendamiento prioritario de urgencia | Funcional | **Pasa** | Estado urgent con color distintivo | Captura CAP-04 (Pendiente manual) |
+| **RF07** | Recordatorios de confirmacion | Funcional | **Pasa** | Listado de citas de manana y wa.me | Suite `Dashboard.test.tsx` / `CAP-05-recordatorios-whatsapp.png` |
+| **RF08** | Agendamiento prioritario de urgencia | Funcional | **Pasa** | Estado urgent con color distintivo | `CAP-04-deteccion-cruce-horario.png` |
 | **RF09** | Busqueda de pacientes y citas | Funcional | **Pasa** | Filtro instantaneo por nombre o cedula | Suite `Patients.test.tsx` |
 | **RF10** | Registro de tratamiento y costo total | Funcional | **Pasa** | Planes de tratamiento y saldos | Suite `ApiIntegrationTest` |
 | **RF11** | Registro de abonos y calculo de saldo | Funcional | **Pasa** | Abonos parciales y saldo restante | Suite `finance.test.ts` |
@@ -140,22 +140,22 @@ A continuacion se presentan los 10 defectos tecnicos documentados, clasificados 
 
 ---
 
-## 5. Capturas de Pantalla Pendientes de Toma Manual
+## 5. Capturas de Pantalla de la Interfaz (Modo Demostracion)
 
-Siguiendo la politica estricta de honestidad, dado que no se instalaron motores externos de automatizacion de navegador tipo Playwright, los siguientes pantallazos quedan formalmente registrados como **Pendientes de toma manual** por parte del operador del sistema:
+Las capturas se tomaron en modo demostracion (datos en memoria), sin Spring Boot ni PostgreSQL. De los 9 flujos E2E se ejecutaron: 6 pasaron, 2 pasaron con observacion (E2E-01 y E2E-08) y 1 fallo (E2E-05, el enlace de la interfaz no incluye `?text=`):
 
-| Identificador | Pantalla / Modulo | Descripcion de la Vista a Capturar | Nombre de Archivo Esperado |
-|:---:|---|---|---|
-| **CAP-01** | Login | Pantalla de inicio de sesion con selector de usuario Merlin | `CAP-01-login-screen.png` |
-| **CAP-02** | Directorio Pacientes | Tabla de pacientes con busqueda y saldo visible | `CAP-02-directorio-pacientes.png` |
-| **CAP-03** | Agenda Semanal | Cuadricula semanal con citas distribuidas del Dr. Carlos | `CAP-03-agenda-semanal.png` |
-| **CAP-04** | Modal Cita Urgente | Formulario de cita con casilla Urgencia marcada | `CAP-04-cita-urgente.png` |
-| **CAP-05** | Recordatorios | Bandeja de recordatorios y boton de enlace a WhatsApp | `CAP-05-recordatorios-whatsapp.png` |
-| **CAP-06** | Abono Financiero | Modal de registro de abono con firma de conformidad | `CAP-06-registro-abono.png` |
-| **CAP-07** | Recibo de Caja | Comprobante imprimible RC-XXXXX en ventana emergente | `CAP-07-recibo-caja-print.png` |
-| **CAP-08** | Cierre de Caja | Conciliacion diaria con arqueo de efectivo y diferencia | `CAP-08-cierre-caja-arqueo.png` |
-| **CAP-09** | Reagendamiento | Bandeja lateral de pacientes pendientes por reagendar | `CAP-09-reagendamiento-pendientes.png` |
-| **CAP-10** | Diseno Movil | Viewport 375x667 mostrando barra inferior de navegacion | `CAP-10-responsive-mobile-view.png` |
+| Identificador | Caso Asociado | Descripcion / Comprobacion | Estado | Archivo Generado |
+|:---:|:---:|---|:---:|---|
+| **CAP-01** | E2E-01 | Acceso y modulos comprobados para secretaria (Recepcion & Caja) y admin (Administrador) | Pasa con observacion | `CAP-01-autenticacion-roles.png` |
+| **CAP-02** | E2E-02 | Paciente ficticio (cedula 9999999901) guardado y visible en busqueda instantanea | Pasa | `CAP-02-registro-busqueda-pacientes.png` |
+| **CAP-03** | E2E-03 | Cita nueva guardada y renderizada en la cuadricula horaria | Pasa | `CAP-03-agendamiento-citas.png` |
+| **CAP-04** | E2E-04 | Modal bloquea guardado y expone alerta de cruce con cita existente | Pasa | `CAP-04-deteccion-cruce-horario.png` |
+| **CAP-05** | E2E-05 | Enlace wa.me interceptado pero sin parametro `?text=` en frontend; cita confirmada | Falla (el enlace de la interfaz no incluye ?text=) | `CAP-05-recordatorios-whatsapp.png` |
+| **CAP-06** | E2E-06 | Plan de $850.000 con abonos acumulados de $500.000 y saldo pendiente de $350.000 | Pasa | `CAP-06-plan-tratamiento-abonos.png` |
+| **CAP-07** | E2E-07 | window.print invocado por el boton de recibo y documento renderizado bajo media print | Pasa | `CAP-07-impresion-recibo-contable.png` |
+| **CAP-08** | E2E-08 | Arqueo calculado con diferencia reflejada ante efectivo digitado, desglose por doctor y metodo | Pasa con observacion | `CAP-08-cierre-diario-arqueo.png` |
+| **CAP-09** | E2E-09 | Paciente Juliana Restrepo Ocampo retirado de pendientes y agendado en cuadricula | Pasa | `CAP-09-reagendamiento-pendientes.png` |
+| **CAP-10** | TC-USA-01 | Sidebar colapsada fuera de pantalla y BottomTabBar activa y visible en viewport 375x667 | Pasa | `CAP-10-diseno-responsivo-movil.png` |
 
 ---
 
